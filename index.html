@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maafin Aku, Adahh 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink:#ffb7d5;--lilac:#c7b9ff;--mint:#b7f7e6;--cream:#fff2d7;--sky:#c7ecff;--text:#2b2b2b;--shadow:rgba(0,0,0,.12)
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Quicksand", "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      overflow-x:hidden;
+      background: linear-gradient(120deg,var(--cream),var(--sky),var(--mint));
+      background-size: 200% 200%;
+      animation: bgmove 12s ease-in-out infinite;
+    }
+    @keyframes bgmove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .container{
+      min-height:100%;
+      display:flex;align-items:center;justify-content:center;
+      padding:32px; position:relative;
+    }
+    .card{
+      width: min(700px, 92vw);
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 12px 30px var(--shadow);
+      padding: 28px 24px 20px;
+      position:relative;
+      overflow:hidden;
+    }
+    .ribbon{
+      position:absolute; inset:auto -32px 24px auto; rotate:-10deg; 
+      background:linear-gradient(90deg,var(--pink),var(--lilac));
+      color:#5a3b58; font-weight:700; padding:6px 22px; border-radius:999px;
+      box-shadow:0 6px 16px var(--shadow);
+    }
+    h1{
+      margin:4px 0 10px; font-size:clamp(22px, 3.6vw, 34px); line-height:1.2;
+    }
+    .subtitle{opacity:.8; margin-bottom:16px}
+    .kawaii{
+      width:120px;height:120px;border-radius:50%; background: radial-gradient(circle at 30% 30%, #fff 0 40%, var(--cream) 60%);
+      box-shadow: 0 12px 24px var(--shadow);
+      position:absolute; right:22px; top:-22px; display:grid; place-items:center; border:6px solid #fff;
+      animation: floaty 3.5s ease-in-out infinite;
+    }
+    @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .face{position:relative; width:70px; height:42px;}
+    .eye{width:14px;height:14px;background:#333;border-radius:50%;position:absolute;top:8px;animation:blink 4s infinite}
+    .eye.left{left:6px}.eye.right{right:6px}
+    .cheek{width:16px;height:10px;background:var(--pink);opacity:.6;border-radius:999px;position:absolute;top:24px}
+    .cheek.left{left:-2px}.cheek.right{right:-2px}
+    .mouth{position:absolute;left:50%;top:16px;transform:translateX(-50%);width:22px;height:12px;border:3px solid #333;border-top:none;border-radius:0 0 18px 18px}
+    @keyframes blink{0%,92%,100%{transform:scaleY(1)}94%,98%{transform:scaleY(.1)}}.message{
+  background: linear-gradient(180deg, #fff, #fff0);
+  border:2px dashed var(--lilac);
+  border-radius:22px;
+  padding:18px; font-size:clamp(14px,2.4vw,18px);
+}
+.message p{margin:10px 0}
+.cta{
+  margin-top:18px; display:flex; gap:12px; flex-wrap:wrap
+}
+.btn{
+  border:none; padding:12px 16px; border-radius:16px; cursor:pointer;
+  font-weight:700; box-shadow:0 8px 16px var(--shadow);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{ background: linear-gradient(90deg, var(--pink), var(--lilac)); }
+.btn-ghost{ background: #fff; border:2px solid var(--mint)}
+
+.heart{position:fixed; font-size:18px; pointer-events:none; opacity:.8; animation:rise 3.8s linear forwards}
+@keyframes rise{from{transform:translateY(0); opacity:.9}to{transform:translateY(-120vh); opacity:0}}
+
+.forgive{
+  margin-top:12px; display:flex; align-items:center; gap:10px; flex-wrap:wrap
+}
+.chip{
+  padding:8px 12px; border-radius:999px; background:var(--sky); border:2px solid #fff; box-shadow:0 6px 14px var(--shadow); font-weight:600
+}
+
+.choices{position:relative; display:flex; gap:10px}
+.choices .btn{min-width:92px}
+
+.sticker{position:absolute; left:-10px; bottom:-8px; width:120px; rotate:-12deg; opacity:.9; filter:drop-shadow(0 8px 12px var(--shadow))}
+
+footer{margin-top:16px; font-size:12px; opacity:.75}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="dialog" aria-label="Permintaan maaf untuk Adahh">
+      <span class="ribbon">Untuk Adahh 💐</span><div class="kawaii" aria-hidden="true">
+    <div class="face">
+      <span class="eye left"></span>
+      <span class="eye right"></span>
+      <span class="cheek left"></span>
+      <span class="cheek right"></span>
+      <span class="mouth"></span>
+    </div>
+  </div>
+
+  <img class="sticker" alt="stiker hati" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23ffb7d5'/><stop offset='1' stop-color='%23c7b9ff'/></linearGradient></defs><g transform='translate(10,10)'><path d='M66 118C44 102 22 86 16 64 8 38 28 20 50 28c10 4 14 12 16 18 2-6 6-14 16-18 22-8 42 10 34 36-6 22-28 38-50 54-2 2-6 2-8 0z' fill='url(%23g)' stroke='%23fff' stroke-width='6' stroke-linejoin='round'/></g></svg>"/>
+
+  <h1>Adahh maafin akuu... <span>🫶</h1>
+  <p class="subtitle">Ada yang pengen aku sampaikan dengan hati yang super tulus…</p>
+
+  <div class="message">
+    <p>Haii Adahh, maafinn akuu yaa... akuu bikin kamuu nggaa nyaman. Akuu bener-bener minta maaf atas kata-kata dan sikapkuu yang mungkinn kelewat batas. Maafinn akuu yaa, dan aku insyaallah nggak mau ngulangin lagi, kaloo setannya nggaa lagii kumat yaa.</p>
+    <p>Maafinn akuu yaa okeeyyy??. Jangann marah lagii yaa? 🥺✨</p>
+    <p><strong>Terima kasih udah mau dengerin.</strong> — <em>Revan</em></p>
+  </div>
+
+  <div class="cta">
+    <a id="waBtn" class="btn btn-primary" target="_blank" rel="noopener">Chat aku di WhatsApp 📱</a>
+    <button class="btn btn-ghost" id="spark">Kirim Peluk Virtual 🤗</button>
+  </div>
+
+  <div class="forgive">
+    <span class="chip">Kamu maafin aku nggak? 🥺</span>
+    <div class="choices">
+      <button class="btn" id="yes">Iya, maafin 💖</button>
+      <button class="btn" id="no">Nanti dulu 🙈</button>
+    </div>
+  </div>
+
+  <footer>Made with <span aria-hidden="true">💗</span> untuk sahabat terbaik.</footer>
+</div>
+
+  </div>  <script>
+    // ====== GANTI BAGIAN INI SESUAI KEBUTUHAN ======
+    const YOUR_NAME = "Revann"; // Namamu
+    const FRIEND_NAME = "Adahh"; // Nama sahabatmu
+    const WA_NUMBER = "085759000696"; // GANTI dengan nomor WA kamu (awali 08 atau 62)
+    const WA_MESSAGE = `Haii Revann ✨\naku udah baca pesanmuu, okee akuu maafin kokk, janjii jangann diulangin lagii💗`; // Pesan default
+    // ===============================================
+
+    document.title = `Maafin Aku, ${FRIEND_NAME} 💖`;
+    document.querySelector("h1 span").textContent = FRIEND_NAME;
+    document.querySelector(".message em").textContent = YOUR_NAME;
+
+    // Bangun link WA dengan nomor & pesan yang sudah diisi
+    function toWaLink(number, message){
+      let n = (number||"").trim();
+      if(n.startsWith("0")) n = "62" + n.slice(1); // ubah 08xxxx jadi 62xxxx
+      const encoded = encodeURIComponent(message);
+      return `https://wa.me/${n}?text=${encoded}`;
+    }
+    const waBtn = document.getElementById('waBtn');
+    waBtn.href = toWaLink(WA_NUMBER, WA_MESSAGE);
+
+    // Peluk virtual = hujan hati imut
+    const spark = document.getElementById('spark');
+    spark.addEventListener('click', ()=>{
+      for(let i=0;i<18;i++) addHeart();
+    });
+
+    function addHeart(){
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.textContent = Math.random()>0.5 ? '💖' : (Math.random()>0.5 ? '💗' : '✨');
+      h.style.left = Math.random()*100 + 'vw';
+      h.style.top = '100vh';
+      h.style.fontSize = (14 + Math.random()*22) + 'px';
+      h.style.transition = 'transform 3s linear';
+      document.body.appendChild(h);
+      setTimeout(()=> h.remove(), 3800);
+    }
+
+    // Tombol "Nanti dulu" lari-lari imut
+    const btnNo = document.getElementById('no');
+    const btnYes = document.getElementById('yes');
+    const choices = document.querySelector('.choices');
+
+    btnNo.addEventListener('mouseover', ()=>{
+      const dx = (Math.random()*160 - 80);
+      const dy = (Math.random()*80 - 40);
+      choices.style.transform = `translate(${dx}px, ${dy}px)`;
+    });
+
+    btnYes.addEventListener('click', ()=>{
+      confetti();
+      btnYes.textContent = 'Makasihhh 💕';
+    });
+
+    // Confetti sederhana
+    function confetti(){
+      for(let i=0;i<80;i++){
+        const c = document.createElement('div');
+        c.style.position='fixed';
+        c.style.left = Math.random()*100 + 'vw';
+        c.style.top = '-10px';
+        c.style.width = c.style.height = (6+Math.random()*6)+'px';
+        c.style.background = ['#ffb7d5','#c7b9ff','#b7f7e6','#fff2d7','#c7ecff'][Math.floor(Math.random()*5)];
+        c.style.borderRadius = Math.random()>0.6 ? '999px' : '6px';
+        c.style.transform = `rotate(${Math.random()*360}deg)`;
+        c.style.boxShadow = '0 2px 6px rgba(0,0,0,.1)';
+        document.body.appendChild(c);
+        let y = 110 + Math.random()*30;
+        let xDrift = (Math.random()*2-1)*30;
+        c.animate([
+          { transform: `translate(0, 0) rotate(0deg)` },
+          { transform: `translate(${xDrift}px, ${y}vh) rotate(${180+Math.random()*180}deg)` }
+        ],{ duration: 2000 + Math.random()*1600, easing:'ease-in' });
+        setTimeout(()=>c.remove(), 3200);
+      }
+    }
+  </script></body>
+</html>
